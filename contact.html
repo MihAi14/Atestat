@@ -4,13 +4,55 @@
 <style>
 
 body {
- 
-  background-color: #333;
+	background-image: url(fundal.png);
+	background-color: #333;
 }
 
-img {
-  opacity: 0.5;
+p {
+	background-color: rgba(40, 40, 40, 0.7);
+	color: #ffffff;
+	border-radius: 10px;
+	text-shadow: 1px 1px 5px #262626;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:1%;
+	margin-left:5%;
+	margin-right:5%;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:120%;
+	text-align: justify;
 }
+
+ul {
+	background-color: rgba(40, 40, 40, 0.7);
+	color: #ffffff;
+	border-radius: 10px;
+	text-shadow: 1px 1px 5px #262626;
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:5%;
+	margin-right:5%;
+	list-style-type:none;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:120%;
+	text-align: justify;
+}
+
+div {
+	background-color: rgba(40, 40, 40, 0.7);
+	color: #ffffff;
+	border-radius: 10px;
+	text-shadow: 1px 1px 5px #262626;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:1%;
+	margin-left:5%;
+	margin-right:5%;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:120%;
 
 </style>
 
@@ -18,7 +60,36 @@ img {
 
 <body>
 
-	<img src="fundal.jpeg" width="99%" height="98%">
+<p>Doriți să primiți actualizări despre galeria personală? <br>
+<input name="Buton1" Type="radio" value=1>Da <br>
+<input name="Buton1" Type="radio" value=2>Nu <br>
+</p>
+
+<p>Doriți să primiți actualizări despre viitoare expoziții <br>
+<input name="Buton1" Type="radio" value=1>Da <br>
+<input name="Buton1" Type="radio" value=2>Nu <br>
+</p>
+
+<p>Sunteți interesat de mai multe informații despre fotografie? <br>
+<input name="Buton1" Type="radio" value=1>Da <br>
+<input name="Buton1" Type="radio" value=2>Nu <br>
+</p>
+
+<div>
+
+	<form action="" method="POST" enctype="multipart/form-data">
+    <input name="action" value="submit" type="hidden"> Your name:<br>
+    <input name="name" size="30" type="text"><br> Your email:<br>
+    <input name="email" size="30" type="text"><br> Your message:<br>
+    <textarea name="message" rows="7" cols="30">
+    </textarea><br>
+	<br>
+    <input value="Send" type="submit">
+    </form>
+	
+</div>
+
+
 
 </body>
 
