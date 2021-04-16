@@ -8,21 +8,7 @@ body {
 	background-color: #333;
 }
 
-p {
-	background-color: rgba(40, 40, 40, 0.7);
-	color: #ffffff;
-	border-radius: 10px;
-	text-shadow: 1px 1px 5px #262626;
-	padding-left:10px;
-	padding-right:10px;
-	margin-top:1%;
-	margin-left:5%;
-	margin-right:5%;
-	padding-top:5px;
-	padding-bottom:5px;
-	font-size:120%;
-	text-align: justify;
-}
+
 
 ul {
 	background-color: rgba(40, 40, 40, 0.7);
@@ -59,37 +45,27 @@ div {
 </head>
 
 <body>
-<form action="conectare.php" method="get">
-<p>Doriți să primiți actualizări despre galeria personală? <br>
-<input name="Buton1" Type="radio" value=1>Da <br>
-<input name="Buton1" Type="radio" value=2>Nu <br>
-</p>
+<form action="insereaza.php" method="post">
 
-<p>Doriți să primiți actualizări despre viitoare expoziții <br>
-<input name="Buton2" Type="radio" value=1>Da <br>
-<input name="Buton2" Type="radio" value=2>Nu <br>
-</p>
-
-<p>Sunteți interesat de mai multe informații despre fotografie? <br>
-<input name="Buton3" Type="radio" value=1>Da <br>
-<input name="Buton3" Type="radio" value=2>Nu <br>
-</p>
-
+<div><p>Doriți să primiți actualizări despre galeria personală? <br>
+<input name="Buton1" Type="radio" value=1>Da<br>
+<input name="Buton1" Type="radio" value=2>Nu <br></p></div>
+<div><p>Doriți să primiți actualizări despre viitoare expoziții<br> 
+<input name="Buton2" Type="radio" value=1>Da<br>
+<input name="Buton2" Type="radio" value=2>Nu<br></p></div>
+<div><p>Sunteți interesat de mai multe informații despre fotografie?<br>
+<input name="Buton3" Type="radio" value=1>Da<br>
+<input name="Buton3" Type="radio" value=2>Nu<br></p></div>
 <div>
-
-
-    <input name="action" value="submit" type="hidden"> Nume:<br>
-    <input name="name" size="30" type="text"><br> Email:<br>
-    <input name="email" size="30" type="text"><br> Mesaj:<br>
+Nume: <br> <input name="nume" size="30" type="text"><br>
+Email: <br> <input name="email" size="30" type="text"><br>
+Mesaj:<br>
     <textarea name="message" rows="7" cols="30">
     </textarea><br>
-	<br>
-    <input value="Trimite" type="submit">
-  </form>
-	
+
+<br><input type="submit" value="Trimite">
+
 </div>
-
-
 
 </body>
 
